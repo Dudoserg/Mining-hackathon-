@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Mining:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Mining_jar</output-path>
+    <root id="archive" name="Mining.jar">
+      <element id="module-output" name="Mining" />
+    </root>
+  </artifact>
+</component>

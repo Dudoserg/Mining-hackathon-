@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <AnchorPane prefHeight="750.0" prefWidth="1100.0">
+         <children>
+            <ImageView fitHeight="750.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/GARAGE6.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn1" layoutX="1026.0" layoutY="60.0" mnemonicParsing="false" onAction="#btn1_oncklick" prefHeight="54.0" prefWidth="70.0" text="Button" />
+            <ImageView fitHeight="45.0" fitWidth="42.0" layoutX="8.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/coin.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelPurse" layoutX="65.0" layoutY="50.0" prefHeight="42.0" prefWidth="106.0" text="0" />
+            <ImageView fitHeight="50.0" fitWidth="53.0" layoutX="4.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/money.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelDollar" layoutX="64.0" layoutY="115.0" prefHeight="42.0" prefWidth="106.0" text="0" />
+            <Pane layoutX="819.0" layoutY="583.0" opacity="0.24" prefHeight="162.0" prefWidth="277.0" style="-fx-background-color: yellow;">
+               <children>
+                  <ImageView fitHeight="169.0" fitWidth="200.0" layoutX="45.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cart.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fx:id="swapButton" fitHeight="75.0" fitWidth="88.0" layoutX="249.0" layoutY="463.0" onMouseEntered="#swapButton_entered" onMouseExited="#swapButton_exited" onMousePressed="#changeCourse" onMouseReleased="#swapButton_reseled" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/sort.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelPriceChange" layoutX="339.0" layoutY="450.0" text="0$" />
+            <ImageView fx:id="oilBoil" fitHeight="138.0" fitWidth="128.0" layoutX="978.0" layoutY="460.0" onMouseClicked="#oilBoil_clicked" onMouseEntered="#oilBoil_entered" onMouseExited="#oilBoil_exited" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/oil.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelPriceOilBoil" layoutX="1013.0" layoutY="511.0" onMouseClicked="#oilBoil_clicked" onMouseEntered="#oilBoil_entered" onMouseExited="#oilBoil_exited" text="Label" />
+            <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="196.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/bitcoin-logo.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
